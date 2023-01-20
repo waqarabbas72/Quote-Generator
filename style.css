@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(202, 202, 202) !important;
+}
+
+.box {
+  border-radius: 15% 0 15% 0;
+  box-shadow: rgba(253, 1, 1, 0.552) 0px 54px 55px,
+    rgba(47, 254, 0, 0.644) 0px -12px 30px, rgba(3, 121, 255, 0.526) 0px 4px 6px,
+    rgba(238, 255, 0, 0.695) 0px 12px 13px, rgba(255, 0, 247, 0.569) 0px -3px 5px;  
+}
+
+.fa-sharp {
+  color: rgb(38, 255, 0);
+  margin: 5px;
+}
+
+.gif {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#loading {
+  display: none !important;
+}
