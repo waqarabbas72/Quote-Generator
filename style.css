@@ -23,3 +23,7 @@ body {
 #loading {
   display: none !important;
 }
+
+.offlineText{
+    color: rgb(210, 88, 88);
+}

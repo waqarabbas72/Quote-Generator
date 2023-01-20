@@ -11,7 +11,8 @@ const options = {
 };
 
 async function getQuote() {
-  quote.innerHTML = `<img src="amalie-steiness.gif" alt="" class="gif d-flex">`;
+  try {
+    quote.innerHTML = `<img src="amalie-steiness.gif" alt="" class="gif d-flex">`;
   author.innerHTML = `-------`;
   category.innerHTML = `-------`;
 
@@ -22,6 +23,9 @@ async function getQuote() {
   quote.innerHTML = `<i class="fa-sharp fa-solid fa-quote-left"></i> ${result[0].quote}  <i class="fa-sharp fa-solid fa-quote-right"></i>`;
   author.innerHTML = `" ${result[0].author} "`;
   category.innerHTML = `" ${result[0].category} "`;
+  } catch (error) {
+    quote.innerHTML = `<p class="offlineText">Oops! Something Went Wrong!</p>`
+  }
 }
 
 // Events On button and onload
